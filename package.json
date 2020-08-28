@@ -1,0 +1,20 @@
+{
+  "name": "edge-js-test",
+  "version": "1.0.0",
+  "description": "My tries to run c# code with edge.js lib",
+  "main": "index.js",
+  "scripts": {
+    "start-dotnet": "EDGE_USE_CORECLR=1 node index",
+    "start-mono": "MONO_LOG_LEVEL=debug MONO_LOG_MASK=dll LD_PRELOAD=\"libmono-2.0.so\" node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "edge",
+    ".net"
+  ],
+  "author": "Ivan Cherviakov",
+  "license": "MIT",
+  "dependencies": {
+    "edge-js": "^14.3.1"
+  }
+}
